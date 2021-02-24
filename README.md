@@ -10,7 +10,7 @@ The project is composed of multiple micro-services as shown in the following arc
 
 ![Architecture diagram](docs/img/architecture_diagram.JPG)
 
-The users acces the application from the front service that allows them to request a generation of a 3D model by uploading photos of climbing walls to a [database](https://github.com/magnesie/magnesie-image-storage).
+The users acces the application from the [front service](https://github.com/magnesie/magnesie-image-storage-webapp) that allows them to request a generation of a 3D model by uploading photos of climbing walls to a [database](https://github.com/magnesie/magnesie-image-storage).
 
 The heart of the application is the [orchestrator](https://github.com/magnesie/magnes-ie-orchestrateur). This service can see when a generation request has been made, and add these requests to a buffer. Every 10 minutes, the orchestrator checks if any of the cloud providers it knows has available green energy. If so, it deploys a [photogrammetry service](https://github.com/magnesie/magnesie-photogrammetry) on this cloud provider's infrastructure if none are already deployed, and orders it to generate a 3D model using the photos of the request.
 
