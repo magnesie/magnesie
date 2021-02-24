@@ -8,4 +8,4 @@ This project's goal is to use micro-services to generate 3D-models of climbing w
 
 The project is composed of multiple micro-services as shown in the following architecture diagram :
 
-![Architecture diagram](docs/img/architecture_diagram.jpg)
+![Architecture diagram](docs/img/architecture_diagram.JPG)
