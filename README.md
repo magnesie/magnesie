@@ -8,7 +8,9 @@ This project's goal is to use micro-services to generate 3D-models of climbing w
 
 The project is composed of multiple micro-services as shown in the following architecture diagram :
 
-![Architecture diagram](docs/img/architecture_diagram.JPG)
+![Architecture diagram](docs/img/architecture.png)
+
+You can also see the [detailed architecture](docs/img/architecture_diagram.JPG).
 
 The users acces the application from the [front service](https://github.com/magnesie/magnesie-image-storage-webapp) that allows them to request a generation of a 3D model by uploading photos of climbing walls to a [database](https://github.com/magnesie/magnesie-image-storage).
 
