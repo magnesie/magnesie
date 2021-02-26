@@ -26,14 +26,14 @@ At the time of writing, to deploy the project, you must deploy each micro-servic
 
 Once each service has been deployed, you can acces the image uplaod front endpoint to create a new model generation submission by filling in the required information and uploading at least 2 photos.
 
-![Architecture diagram](docs/img/front_upload.JPG)
+![Front upload](docs/img/front_upload.JPG)
 
 The orchestrator checks every 10 minutes if new submissions have been made, and sends those submission to the photogrammetry service, deploying it if needed.
 
-![Architecture diagram](docs/img/orchestrator_start.JPG)
-![Architecture diagram](docs/img/orchestrator_create_submision.JPG)
+![Orchestrator start](docs/img/orchestrator_start.JPG)
+![Orchestrator create submission](docs/img/orchestrator_create_submision.JPG)
 
 
 Once the photogrammetry service has finished, it will return the download link for the 3D model, which the orchestrator will send to the result database. The result front will then be usable to view this 3D-model.
 
-![Architecture diagram](docs/img/result.png)
+![3D Result](docs/img/result.png)
